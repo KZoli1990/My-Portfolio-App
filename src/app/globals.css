@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,500&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color:#fff;
+}
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 54px;
+}
+
+#home{
+    background-image: url('../../assets/home2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dev-stroke{
+  position: relative;
+  -webkit-text-stroke: 0.7px #1cd8fd;
+  background-image: linear-gradient(#1cd8fd, #1cd8fd);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: devText 6s linear infinite;
+  animation-delay: 2s;
+}
+
+.spiner {
+    animation: spin infinite 10s linear;
+}
+
+@keyframes devText {
+  0%,10%,100%{
+    background-position: -80rem 0;
+  }
+
+  65%,85%{
+    background-position: 0 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showRight {
+  100% {
+    width:0;
+  }
+}
+
+@keyframes loadingRotate1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  } 
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes loadingRotate2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  } 
+  100% {
+    transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes loadingRotate3 {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  } 
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+  
+  
+
+
