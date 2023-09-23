@@ -95,7 +95,7 @@ const About:React.FC<aboutProps> = ({lang, scrollPage}) => {
         <h2 className='text-3xl relative sm:text-4xl md:text-5xl xl:text-7xl text-center text-white font-bold mt-14'>{lang? "Ról" : "About "}<span className='text-[#1cd8fd]'>{lang? 'am' : 'Me'}</span> {scrollPage === 1 ? <span style={{animationDelay: '3s'}} className="absolute top-0 right-0 w-full h-[120%] z-[98] bg-[#0c283c] animate-showRight"></span> : null}</h2>
         
         
-        <div  className="object-cover relative w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[15rem] md:w-[16rem] md:h-[16rem] xl:w-[20rem] xl:h-[20rem] mx-auto rounded-full flex justify-center items-center">
+        <div  className="profile object-cover relative w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[15rem] md:w-[16rem] md:h-[16rem] xl:w-[20rem] xl:h-[20rem] mx-auto rounded-full flex justify-center items-center">
           <Image
             src={Profile}
             alt="En-flag"

@@ -68,14 +68,14 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
   };
 
   return (
-    <section id='contact' className='w-full h-screen flex flex-col justify-around items-center bg-[#0c283c] snap-start duration-500 overflow-hidden'>
+    <section id='contact' className='w-full min-h-screen flex flex-col justify-around items-center bg-[#0c283c] snap-start duration-500 overflow-hidden'>
     
     <h2 className='text-3xl relative sm:text-4xl md:text-5xl xl:text-7xl text-center text-white font-bold mt-14'>{lang? "Keress " : "Contact "} <span className='text-[#1cd8fd]'>{lang? "Meg!" : "Me!"}</span> {scrollPage === 3 ? <span className="absolute top-0 right-0 w-full h-[120%] z-[98] bg-[#0c283c] animate-showRight"></span> : null}</h2>
 
         <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center'>
           <div className='grid sm:grid-cols-2'>
 
-            <div className={`relative m-1 p-2 sm:m-2 sm:p-3 py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus1? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
+            <div className={`input relative m-1 p-2 py-6 sm:m-2 sm:p-3 sm:py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus1? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
                 <i className={`absolute inset-0 block 
                         before:absolute before:top-0 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] ${focus1? 'before:duration-500 before:w-[20px] before:left-[20%]':'before:left-[80%] before:w-3'}
                         after:absolute after:bottom-0 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] ${focus1? 'after:duration-500 after:w-[20px] after:left-[80%]':'after:left-[20%] after:w-3'}`}
@@ -93,7 +93,7 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
             </div>
            
 
-            <div className={`relative m-1 p-2 sm:m-2 sm:p-3 py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus2? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
+            <div className={`input relative m-1 p-2 py-6 sm:m-2 sm:p-3 sm:py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus2? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
                 <i className={`absolute inset-0 block 
                         before:absolute before:top-0 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] ${focus2? 'before:duration-500 before:w-[20px] before:left-[20%]':'before:left-[80%] before:w-3'}
                         after:absolute after:bottom-0 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] ${focus2? 'after:duration-500 after:w-[20px] after:left-[80%]':'after:left-[20%] after:w-3'}`}
@@ -111,7 +111,7 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
             </div>
             
 
-            <div className={`relative m-1 p-2 sm:m-2 sm:p-3 py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus3? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
+            <div className={`input relative m-1 p-2 py-6 sm:m-2 sm:p-3 sm:py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus3? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
                 <i className={`absolute inset-0 block 
                         before:absolute before:top-0 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] ${focus3? 'before:duration-500 before:w-[20px] before:left-[20%]':'before:left-[80%] before:w-3'}
                         after:absolute after:bottom-0 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] ${focus3? 'after:duration-500 after:w-[20px] after:left-[80%]':'after:left-[20%] after:w-3'}`}
@@ -129,7 +129,7 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
             </div>
             
 
-            <div className={`relative m-1 p-2 sm:m-2 sm:p-3 py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus4? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
+            <div className={`input relative m-1 p-2 py-6 sm:m-2 sm:p-3 sm:py-6 w-[250px] lg:w-[450px] before:absolute before:inset-[2px] before:bg-[#081b29] ${focus4? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
                 <i className={`absolute inset-0 block 
                         before:absolute before:top-0 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] ${focus4? 'before:duration-500 before:w-[20px] before:left-[20%]':'before:left-[80%] before:w-3'}
                         after:absolute after:bottom-0 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] ${focus4? 'after:duration-500 after:w-[20px] after:left-[80%]':'after:left-[20%] after:w-3'}`}
@@ -149,7 +149,7 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
 
           </div>
 
-          <div className={`relative m-1 p-2 sm:m-2 sm:p-3 w-[250px] sm:w-[516px] lg:w-[916px] duration-500 before:absolute before:inset-[2px] before:bg-[#081b29] ${focus5? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
+          <div className={`textarea relative m-1 p-2 sm:m-2 sm:p-3 w-[250px] sm:w-[516px] lg:w-[916px] duration-500 before:absolute before:inset-[2px] before:bg-[#081b29] ${focus5? 'bg-[#1cd8fd] shadow-blue-35px duration-500':'bg-white duration-500'}`}>
             <i className={`absolute inset-0 block 
                     before:absolute before:top-0 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] ${focus5? 'before:duration-500 before:w-[20px] before:left-[20%]':'before:left-[80%] before:w-3 before:duration-500'}
                     after:absolute after:bottom-0 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] ${focus5? 'after:duration-500 after:w-[20px] after:left-[80%]':'after:duration-500 after:left-[20%] after:w-3'}`}
@@ -178,15 +178,15 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
           
         </form>
 
-        <div className='relative flex flex-col items-center sm:bottom-[-30px] w-full group'>
+        <div className='arrow relative flex flex-col items-center sm:bottom-[-30px] w-full group'>
           <BiSolidUpArrow color={'#1cd8fd'} cursor={'pointer'} className='relative group-hover:rotate-180'/>
           {scrollPage === 3 ? <span style={{animationDelay: '3.5s'}} className="absolute top-0 right-0 w-full h-[120%] z-[98] bg-[#0c283c] animate-showRight"></span> : null}
-          <footer className=' hidden w-full h-[80px] group-hover:flex justify-between items-center flex-wrap px-[9%] bg-[#081b29] duration-500'>
-            <div className='relative top-[-20px]'>
+          <footer className=' hidden w-full h-[40px] group-hover:flex justify-between items-center flex-wrap px-[9%] bg-[#081b29] duration-500'>
+            <div>
                 <p className='text-[9px] sm:text-sm'>Copyright &copy; 2023 {lang? 'Készítette Keresztényi Zoltán | Minden Jog Fenntartva.':'by Zoltan Keresztenyi | All Rights Reserved.'}</p>
             </div>
 
-            <div className='relative top-[-20px]'>
+            <div>
                 <Link href="/#home" onClick={() => setTimeout(()=>{setScrollPage(0)},20)} className='relative inline-flex justify-center items-center p-1 bg-[#1cd8fd] border-2 border-[#1cd8fd] rounded-lg'>
                     <BiUpArrowCircle color={'#081b29'} size={15} className='cursor-pointer'/>
                 </Link>

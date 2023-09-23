@@ -12,11 +12,11 @@ export default function Home() {
   const handleLang = () => setLang(!lang);
 
   const [scrollPage, setScrollPage] = useState(0);
-  const handleScrollPage = (event:any) => {
-    if (event.target.scrollTop > scrollPage * event.target.clientHeight) {
-      setScrollPage(scrollPage + 1);
-    } else if (event.target.scrollTop < scrollPage * event.target.clientHeight) {
-      setScrollPage(scrollPage - 1);
+  const handleScrollPage = (event: any) => {
+    const newScrollPage = Math.floor(event.target.scrollTop / event.target.clientHeight);
+  
+    if (newScrollPage !== scrollPage) {
+      setScrollPage(newScrollPage);
     }
   };
  
