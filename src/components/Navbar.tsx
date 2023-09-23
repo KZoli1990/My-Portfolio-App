@@ -48,7 +48,7 @@ const Navbar:React.FC<NavbarProps> = ({lang, handleLang, scrollPage, setScrollPa
           <Image
             src={Logo}
             alt="Logo"
-            className="object-cover h-[160px] w-[160px]"
+            className="object-cover w-[80px] lg:w-[160px]"
             layout="intrinsic"
           />
           {scrollPage === 0 ? <span className="absolute top-0 right-0 w-full h-[110%] z-[98] bg-[#081b29] animate-showRight"></span> : null}
