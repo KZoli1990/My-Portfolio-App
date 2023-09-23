@@ -108,7 +108,7 @@ const About:React.FC<aboutProps> = ({lang, scrollPage}) => {
 
         <div className='flex flex-col justify-start items-center my-3 relative'>
           <h3 className='hidden md:block'>{lang? "Ezt a porfólió oldalt eléred a Github fiókomba": "You can access this portfolio page in my Github account"}</h3>
-          <a href="https://github.com/KZoli1990/My-Porfolio-App.git">
+          <a href="https://github.com/KZoli1990/My-Portfolio-App.git">
             <div className='m-[2px] cursor-pointer opacity-50 flex flex-col items-center bg-[#081b29] p-4 h-[30px] w-[30px] rounded-full border-2  border-[#1cd8fd] group hover:opacity-100 duration-300 relative sm:h-[50px] sm:w-[50px] sm:m-3 lg:m-4 xl:h-[107px] xl:w-[107px]'>
               <BiLogoGithub style={{minHeight:'30px', minWidth:'30px'}} color={'white'} className='absolute top-[2px] sm:top-[10px] sm:h-6 sm:w-6 '/>
               <span className='hidden absolute text-white sm:block top-14 text-sm'>Github</span>
