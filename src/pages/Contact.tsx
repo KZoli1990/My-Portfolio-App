@@ -168,7 +168,7 @@ const Contact:React.FC<contactProps> = ({ lang, scrollPage, setScrollPage}) => {
           </div>
           
 
-          <div className='relative m-1 p-2 w-[250px] sm:w-[516px] lg:w-[916px] duration-500 before:absolute before:inset-[2px] before:bg-[#081b29] hover:shadow-blue-35px bg-white hover:bg-[#1cd8fd] group cursor-pointer'>
+          <div className='send-btn relative m-1 p-2 w-[250px] sm:w-[516px] lg:w-[916px] duration-500 before:absolute before:inset-[2px] before:bg-[#081b29] hover:shadow-blue-35px bg-white hover:bg-[#1cd8fd] group cursor-pointer'>
             <i className={`absolute inset-0 block 
                     before:absolute before:top-0 before:left-[80%] before:w-3 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] group-hover:before:duration-500 group-hover:before:w-[20px] group-hover:before:left-[20%]
                     after:absolute after:bottom-0 after:left-[20%] after:w-3 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] group-hover:after:duration-500 group-hover:after:w-[20px] group-hover:after:left-[80%]`}

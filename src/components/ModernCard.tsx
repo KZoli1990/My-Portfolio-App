@@ -17,7 +17,7 @@ const ModernCard:React.FC<cardProps> = ({text, projectImg, demoHref, gitHubHref,
         <i className={`absolute inset-0 block 
                 before:absolute before:top-0 before:left-[80%] before:w-3 before:h-1 before:bg-[#081b29] before:transform before:translate-x-[-50%] before:skew-x-[325deg] group-hover:before:duration-500 group-hover:before:w-[20px] group-hover:before:left-[20%]
                 after:absolute after:bottom-0 after:left-[20%] after:w-3 after:h-1 after:bg-[#081b29] after:transform after:translate-x-[-50%] after:skew-x-[325deg] group-hover:after:duration-500 group-hover:after:w-[20px] group-hover:after:left-[80%]`}
-        ></i><div style={{backgroundImage: `url(${projectImg.src})`}} className='relative z-10 w-full h-[80px] md:h-[300px] work'>
+        ></i><div style={{backgroundImage: `url(${projectImg.src})`}} className='relative card-h z-10 w-full h-[80px] md:h-[300px] work'>
             <div className=" hidden w-full h-full bg-[rgba(28,216,253,.7)] group-hover:flex flex-col justify-around">
                 <h3 className='text-black text-xs sm:text-lg text-center font-bold'>{text}</h3>
                 <div className='flex justify-around'>

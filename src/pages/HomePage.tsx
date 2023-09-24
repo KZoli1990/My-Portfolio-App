@@ -14,7 +14,7 @@ const HomePage:React.FC<HomeProps> = ({lang, scrollPage, setScrollPage}) => {
   return (
     <section id='home' className='w-full h-screen flex items-end snap-start'>
       
-      <div className='w-[80%] h-[90%] flex flex-col justify-between sm:w-[65%] lg:w-[60%] sm:justify-around'>
+      <div className='homeContainer w-[80%] h-[90%] flex flex-col justify-between sm:w-[65%] lg:w-[60%] sm:justify-around'>
           
       <h1 className='text-2xl ps-1 sm:ms-3 sm:text-4xl lg:text-5xl xl:text-7xl text-white font-bold relative inline-block'>{lang? "Helló ": "Hi I'm "}<span className='text-[#1cd8fd]'>{lang? "Keresztényi Zoltán" : "Zoltan Keresztenyi"}</span> {lang? "vagyok" : ""}{scrollPage === 0 ? <span style={{animationDelay: '1.5s'}} className="absolute top-0 right-0 w-full h-[110%] z-[98] bg-[#081b29] animate-showRight animation-delay-3000"></span> : null}</h1>
         
@@ -48,7 +48,7 @@ const HomePage:React.FC<HomeProps> = ({lang, scrollPage, setScrollPage}) => {
           Thank you for taking the time to read this.`}
           {scrollPage === 0 ? <span style={{animationDelay: '2.5s'}} className="absolute top-0 right-0 w-full h-full z-[98] bg-[#081b29] animate-showRight"></span> : null}
         </p>
-        <div className='flex flex-col justify-center sm:flex-row items-center sm:justify-around'>
+        <div className='sm-h-flex flex flex-col justify-center sm:flex-row items-center sm:justify-around'>
           <div className='w-[50%] flex justify-center relative'>
             <ModernButton textColor='#1cd8fd' hoverColor='blue' text={lang? 'Alkalmazz' : 'Hire Me'} href='/#about' setScrollPage={setScrollPage}/>
             {scrollPage === 0 ? <span style={{animationDelay: '3s'}} className="absolute top-0 right-0 w-[140%] h-full z-[98] bg-[#081b29] animate-showRight"></span> : null}
@@ -57,10 +57,9 @@ const HomePage:React.FC<HomeProps> = ({lang, scrollPage, setScrollPage}) => {
             <ModernButton textColor='blue' hoverColor='#1cd8fd' text={lang? 'Beszéljünk' : "Let's talk"} href='/#contact' setScrollPage={setScrollPage}/>
             {scrollPage === 0 ? <span style={{animationDelay: '3.5s'}} className="absolute top-0 right-0 w-[140%] h-full z-[98] bg-[#081b29] animate-showRight"></span> : null}
           </div>
-          
         </div>
       </div>
-      <div className='w-0 sm:w-[35%] lg:w-[40%] h-screen hover:bg-[#081b29]/80 duration-1000 relative'>{scrollPage === 0 ? <span style={{animationDelay: '4s'}} className="absolute top-0 right-0 w-full h-[110%] z-[98] bg-[#081b29] animate-showRight"></span> : null}</div>
+      <div className='profileContainer w-0 sm:w-[35%] lg:w-[40%] h-screen hover:bg-[#081b29]/80 duration-1000 relative'>{scrollPage === 0 ? <span style={{animationDelay: '4s'}} className="absolute top-0 right-0 w-full h-[110%] z-[98] bg-[#081b29] animate-showRight"></span> : null}</div>
     </section>
   )
 }

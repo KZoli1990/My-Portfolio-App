@@ -106,7 +106,7 @@ const Navbar:React.FC<NavbarProps> = ({lang, handleLang, scrollPage, setScrollPa
         <div 
           className={
             nav 
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-[#0c283c] p-10 ease-in duration-500' : 
+              ? 'mobile-nav fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] bg-[#0c283c] p-10 ease-in duration-500' : 
                 'fixed left-[-150%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -116,7 +116,7 @@ const Navbar:React.FC<NavbarProps> = ({lang, handleLang, scrollPage, setScrollPa
                 <Image
                   src={Logo}
                   alt="Logo"
-                  className="object-cover h-[160px] w-[160px]"
+                  className="logo object-cover h-[160px] w-[160px]"
                   layout="intrinsic"
                 />
               </div>
@@ -128,7 +128,7 @@ const Navbar:React.FC<NavbarProps> = ({lang, handleLang, scrollPage, setScrollPa
               <p className='w-[85%] md:w-[90%] text-[#1cd8fd] py-4'>{lang? 'Üdvözlöm a portfólió oldalamon mobilon is.' : "Welcome to my portfolio page on mobile as well."}</p>
             </div>
           </div>
-          <div className='py-4 flex flex-col'>
+          <div className='nav-items py-4 flex flex-col'>
             <ul className='uppercase'>
             <label htmlFor="lang">
               <div className='h-[30px] w-[60px] border-[#1cd8fd] border-2 rounded-full relative'>

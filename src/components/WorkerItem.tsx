@@ -75,11 +75,11 @@ const WorkerItem:React.FC<WorkerProps> = ({openModal, handleModal, item, lang}) 
   return (
     <div className={openModal ? `w-full h-screen bg-black/50 fixed top-0 flex items-center justify-center z-[100]` : ` hidden`}>
         
-        <div className='w-[95%] h-[95%] mt-20 lg:w-[65%] md:h-[70%] lg:mt-0 bg-[#0c283c] flex flex-col items-center rounded-3xl relative'>
+        <div className='modal-container w-[95%] h-[95%] mt-20 lg:w-[65%] md:h-[70%] lg:mt-0 bg-[#0c283c] flex flex-col items-center rounded-3xl relative'>
             <IoMdCloseCircle size={35} color='white' className='absolute right-0 m-4 cursor-pointer' onClick={handleModal}/>
             {title}
             
-           <div className='m-2 flex flex-col items-center bg-[#081b29] p-4 h-[107px] w-[107px] rounded-full border-2 border-[#1cd8fd] relative my-4'>
+           <div className='modal-icon m-2 flex flex-col items-center bg-[#081b29] p-4 h-[107px] w-[107px] rounded-full border-2 border-[#1cd8fd] relative my-4'>
                 {icon}
                 {minTitle}
                 <span className='spiner transform rotate-0 border-[0.1rem] border-t-[#1cd8fd] border-b-[#1cd8fd] border-l-[#0c283c] border-r-[#0c283c] absolute w-[130px] h-[130px] rounded-full bottom-[-13px]'></span>

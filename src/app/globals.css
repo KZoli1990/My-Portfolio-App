@@ -7,10 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-input:focus, textarea:focus {
-  position: static !important;
-}
-
 html {
     scroll-behavior: smooth;
     color:#fff;
@@ -100,11 +96,46 @@ html {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
-  
-@media screen and (max-height: 536px) {
+/*mobile rotation */
+@media screen and (max-height: 500px) {
+  .mobile-nav{
+    max-height: 280px !important;
+    padding: 0 !important;
+  }
+  .mobile-nav .logo{
+    width: 70px !important;
+  }
+  .mobile-nav p, .mobile-nav .nav-items, .mobile-nav .nav-items li{
+    margin: 2px 5px !important;
+    padding: 2px  !important;
+  }
+
+  #home .homeContainer{
+    width: 80% !important;
+  }
+
+  #home .profileContainer{
+    width: 20% !important;
+  }
+
+  #home h1{
+    margin: -10px 5px !important;
+    top:30px !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
   #home p {
     font-size: 10px !important;
     line-height: 12px !important;
+  }
+  #home .sm-h-flex{
+    flex-direction: row !important;
+  }
+  #home h2{
+    margin: -5px 5px !important;
+    top: 20px !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
   #home a {
     max-height: 25px !important;
@@ -116,23 +147,74 @@ html {
   }
 
   #about .profile{
-    max-height: 170px !important;
-    max-width: 170px !important;
+    max-height: 70px !important;
+    max-width: 70px !important;
+  }
+
+  #about h2{
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  #about h3{
+    display: none !important;
+  }
+
+  .modal-container .modal-icon{
+    height: 70px !important;
+    width: 70px !important;
+  }
+
+  .modal-container .modal-icon .spiner{
+    height: 89px !important;
+    width: 89px !important;
+  }
+
+  .modal-container p {
+    font-size: 10px !important;
+  }
+
+  #works h2{
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
   }
 
   #works .grid{
     grid-template-columns: 1fr 1fr 1fr !important;
   }
 
+  #works .grid .card-h{
+    height: 80px !important;
+  }
+
   #contact h2{
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
     margin: 0 !important;
   }
 
+  #contact form .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   #contact .input{
-    margin: 2px 8px!important;
+    max-width: 250px !important;
+    margin: 1px 8px!important;
+    padding: 15px !important;
+  }
+
+  #contact .input input{
+    top:-10px !important;
   }
   #contact .textarea{
     margin:0 -5px !important;
+    max-height: 60px !important;
+    width: 516px !important;
+  }
+
+  #contact .send-btn{
+    width: 516px !important;
+    padding: 4px !important;
   }
 
   #contact .arrow{
