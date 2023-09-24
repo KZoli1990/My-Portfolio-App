@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import HomePage from "@/pages/HomePage";
-import Kamu from "@/pages/Kamu";
 import Works from "@/pages/Works";
 import React,{useState} from "react";
 
@@ -12,6 +11,7 @@ export default function Home() {
   const [lang, setLang] = useState<boolean>(false);
   const handleLang = () => setLang(!lang);
   /*
+  korlátlan oldal scroll, a másik példa 0tól3ig limit azaz 4oldal
   const [scrollPage, setScrollPage] = useState(0);
   const handleScrollPage = (event: any) => {
     const newScrollPage = Math.floor(event.target.scrollTop / event.target.clientHeight);
